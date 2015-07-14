@@ -10,7 +10,10 @@ html(lang='en')
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-64679846-1', 'auto');
       ga('send', 'pageview');
-
+    script(type='text/javascript').
+      $(window).load(function(){
+      $('#modal5').openModal();
+      });
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     title Express with Node.JS!
@@ -132,11 +135,11 @@ html(lang='en')
               i.mdi-image-flash-on
             h5.center Languages
             ul.center.light(style='list-style-type:square')
-              li
-                strong Ruby
-              li Javascipt
-              li HTML5
-              li CSS
+              strong
+                li Ruby
+                li Javascipt
+                li HTML5
+                li CSS
         .col.s12.m3
           .icon-block
             h2.center.black-text
