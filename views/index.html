@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64679846-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+
+  <link href="stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">&#9813;</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.linkedin.com/in/ricardofernandez1">Linkedin</a></li>
+        <li><a href="http://twitter.com/rickthemovie">Twitter</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.linkedin.com/in/ricardofernandez1">Linkedin</a></li>
+        <li><a href="http://twitter.com/rickthemovie">Twitter</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container" style="background-color: rgba(0, 0, 0, .2)">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h2 class="header center white-text text-lighten-2">R. Fernandez</h2>
+        <div class="row center">
+                   <img src="images/rick.png" alt="photograph of Rick!" class="profile-photo">
+
+           <p class="title-date">
+
+               <a href="tel:6613167626"><i class="mdi-communication-phone prefix"> 661 - 316 - 7626</i><br></a>
+              <a href="mailto:Fernandezr16@gmail.com"><i class="mdi-content-mail"> contact@rickthe.website</i></a>
+            </p>
+        </div>
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 2" style="height:900px"></div>
+  </div>
+
+
+  <div class="container">
+
+  	<%= partial "shared/aboutme" %>
+  	<%= partial "shared/skills"%>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper" style="background-color: rgba(0, 0, 0, .2)">
+
+
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+         <%= partial 'shared/experience' %>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 2" style="height:1500px"></div>
+  </div>
+
+  <div class="container">
+    <!-- Projects Section -->
+    <%= partial 'shared/projects' %>
+
+  </div>
+
+
+  <div class="parallax-container valign-wrapper" style="background-color: rgba(0, 0, 0, .2)">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+           
+           <%=partial "shared/education"%>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 3" style="align:right;height:900px"></div>
+  </div>
+
+  
+  <div class="container">
+  
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-action-description black-text"></i></h3>
+            <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Download"style="font-size:75%" href="resume.pdf">Resume</a>
+
+          <p color = "black"> Press here to view my Resume in a beautiful PDF format. </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--  Scripts-->
+
+
+  <script src="javascripts/materialize.js"></script>
+  <script src="javascripts/init.js"></script>
+
+  </body>
+          
+</html>

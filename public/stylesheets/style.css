@@ -1,0 +1,152 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+
+
+blockquote{
+margin:30px;
+}
+
+.btn, .btn-large {
+  height: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: #eceff1;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+  .btn:hover, .btn-large:hover {
+    color: black;
+    background-color: #eeeeee; }
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+
+a {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+#high{
+  background-color: rgba(0, 0, 0, .2);
+}
+p {
+  padding-left: 10px; 
+  line-height: 2rem;
+
+
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+    position: inherit !important;
+  }
+
+
+@media only screen and (max-width : 992px) {
+
+
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.profile-photo {
+  display: block;
+  max-width: 155px;
+  margin: 0 auto 0px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+
+}
+
+.lightspeed-logo {
+ margin-top: 30px;
+  max-width: 70px;
+  margin-bottom: 0px;
+
+}
+
+.xerox-logo {
+ margin-top: 30px;
+  max-width: 160px;
+  margin-bottom: 0px;
+
+}
+
+.mybigcampus-logo {
+max-width: 65px;
+padding: 0;
+margin-top: 0;
+
+}
+
+.mdm-logo{
+  max-width: 65px;
+
+}
+
+.rocket-logo{
+
+  max-width: 65px;
+
+}
+
+.fif-logo{
+  max-width: 70px;
+}
+
+
+.title-date{  
+  padding: 0px 10px 0px 10px;
+  background-color: rgba(0, 0, 0, .4);
+
+}

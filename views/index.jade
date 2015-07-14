@@ -1,0 +1,356 @@
+doctype html
+html(lang='en')
+  head
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-64679846-1', 'auto');
+      ga('send', 'pageview');
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+    title Parallax Template - Materialize
+    // CSS
+    link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+  body
+    nav.white(role='navigation')
+      .nav-wrapper.container
+        a#logo-container.brand-logo(href='#') ♕
+        ul.right.hide-on-med-and-down
+          li
+            a(href='#') Home
+          li
+            a(href='https://www.linkedin.com/in/ricardofernandez1') Linkedin
+          li
+            a(href='http://twitter.com/rickthemovie') Twitter
+        ul#nav-mobile.side-nav
+          li
+            a(href='#') Home
+          li
+            a(href='https://www.linkedin.com/in/ricardofernandez1') Linkedin
+          li
+            a(href='http://twitter.com/rickthemovie') Twitter
+        a.button-collapse(href='#', data-activates='nav-mobile')
+          i.mdi-navigation-menu
+    #index-banner.parallax-container(style='background-color: rgba(0, 0, 0, .2)')
+      .section.no-pad-bot
+        .container
+          br
+          br
+          h2.header.center.white-text.text-lighten-2 R. Fernandez
+          .row.center
+            img.profile-photo(src='images/rick.png', alt='photograph of Rick!')
+            p.title-date
+              a(href='tel:6613167626')
+                i.mdi-communication-phone.prefix  661 - 316 - 7626
+                br
+              a(href='mailto:Fernandezr16@gmail.com')
+                i.mdi-content-mail  contact@rickthe.website
+          br
+          br
+      .parallax
+        img(src='images/background1.jpg', alt='Unsplashed background img 2', style='height:900px')
+    .container
+      // Modal Trigger
+      div(style='padding-top: 10px')
+        center
+          a.modal-trigger.waves-effect.waves-light.btn(style='font-size:80%', href='#modal5') Press Here To Read About Me
+      // Modal Structure
+      #modal5.modal
+        .modal-content
+          center Now Playing:
+          center
+            video.responsive-video(style='width:85%', controls='', poster='http://assets1.ignimgs.com/2015/03/15/1427358mktpasiliconvalleys2-ka-v12rev2jpg-52a950_1280w.jpg')
+              source(src='https://s3-us-west-1.amazonaws.com/thezoo/Silicon+-Valley+Season+1_+Episode+%232+Clip+2+(HBO).mp4', type='video/mp4')
+          p(style='font-size:90%')
+            | Welcome! I decided to use some free time to build out the website you are looking at now.  It's using 
+            b Materialize
+            |  on the front-end, 
+            b Middleman
+            |  on the back-end, and 
+            b Heroku
+            |  for hosting. It includes all important information about me while showing off a few skills in Development. I also included a link to my Resume in a professional PDF format.  Let me know if you need anything else. Thanks!
+          blockquote(style='font-size: 81%')
+            b Site To Do:
+            br
+            strike
+              | Fix 
+              a(href='http://i.imgur.com/7IaCWt5.png', target='_blank', style='color:teal')  Mobile View 
+              |  of Parallax(s) and Profile Photo.
+            b
+              | Fixed: 6-19-15. Thanks 
+              a(href='http://twitter.com/dponrails', style='color:teal') David!
+            br
+            strike Covert About me collapsible to a Modal
+            b Fixed 6-20-15
+            br
+            strike
+              | Convert Youtube to self hosted with  
+              a(href='http://www.amazon.com/', style='color:teal') AmazonAWS.
+            b Fixed 6-21-15
+            br
+            strike
+              | Covert from Ruby on Rails to 
+              a(href='https://middlemanapp.com/', style='color:teal')  MiddleMan.
+            b Done! 6-30-15 
+            br
+            strike Add Visitor Tracking with Google Analytics
+            b Done! 6-30-15 
+            br
+            | Move from Heroku to Digital Ocean 
+            br
+            | Create Capistrano script to deploy to Digital Ocean 
+            br
+            | Covert from Middleman to Express with Node.js 
+            br
+            | Add 
+            i Personal Projects 
+            |  Section
+            br
+            | Fix Video Fullscreen from Modal issue. 
+            br
+          center
+            u Last Updated    6.31.15
+            br
+        .modal-footer
+          a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Thank you!
+      // Skills Section
+      .row
+        .col.s12.m3
+          #skills.icon-block
+            h2.center.black-text
+              i.mdi-image-flash-on
+            h5.center Languages
+            ul.center.light(style='list-style-type:square')
+              li
+                strong Ruby
+              li Javascipt
+              li HTML5
+              li CSS
+        .col.s12.m3
+          .icon-block
+            h2.center.black-text
+              i.mdi-content-link
+            h5.center Frameworks
+            ul.center.light
+              li
+                strong
+                  | Rails
+                  li Sinatra
+                  li Bootstrap
+                  li Materialize
+        .col.s12.m3
+          .icon-block
+            h2.center.black-text
+              i.mdi-action-settings
+            h5.center Databases
+            ul.center.light
+              strong
+                li PostgresSQL
+                li MySQL
+                li Redis
+                li Solr
+        .col.s12.m3
+          .icon-block
+            h2.center.black-text
+              i.mdi-hardware-laptop
+            h5.center Networking
+            ul.center.light
+              strong
+                li Unix Servers
+                li IP/DNS/DHCP
+                li Architecture
+                li Tier III Support
+    .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2)')
+      .section.no-pad-bot
+        .container
+          .row.center
+            article
+              h5#experience.header.col.s12.light Experience
+              img.lightspeed-logo(src='images/lightspeed.png', alt='lightspeed')
+              p(align='center')
+                strong Lightspeed Systems Inc
+                br
+              p.title-date
+                span(style='float:left')
+                  strong SaaS QA Engineer
+                span(style='float:right')  Feb 2014 – Mar 2015 
+                br
+              p#high(align='left')
+                | As a Senior member of the SaaS QA department, my primary responsibilities were handling releases, defect tracking, release documentation, and acting liaison between Support/Development. Releases were done by utilizing a 
+                u Capistrano
+                |  script to deploy to staging  and using a proprietary deployment tool to release to production. Regression was fufilled by test plans devised of integration, unit, and functional tests.   Later in my position, I was given the opportunity to oversee all iOS and Android development for the My Big Campus solution. It was also in this position where my experience was used to mentor junior members.
+              p.title-date
+                span(style='float:left')
+                  strong Webfilter QA Engineer 
+                span(style='float:right')
+                  strong June 2013 - Feb 2014
+                br
+              p#high(align='left')
+                | During my accelerated workload on the Webfilter team, tools included: Salesforce, Gemini, and Unix based environments. Working primarily on ticket escalations via Salesforce, my responsibilities included acting as Tier III to find and resolve issues that were believed to be caused by defects in the product. Scope also included blackbox testing, clearbox testing, and mentorship to the Support department.
+              p.title-date
+                span(style='float:left')
+                  strong Support Engineer 
+                span(style='float:right')
+                  strong
+                    strong Sept 2011 - June 2013
+                br
+              p
+              p#high(align='left')
+                | Working in Support consisted of monitoring a realtime queue of tickets and responding via outbound calls to customers. After an issue was solved, a ticket was taken and closed in your name. During my time in Support, I repeatedly obtained the highest number of taken and closed with a total of 2,500+ per year. Scope included advanced network troubleshooting, client based troubleshooting, and hardware configuration.
+              img.xerox-logo(src='images/xerox.png', alt='lightspeed')
+              p(align='center')
+                strong Affiliated Computer Services 
+                br
+              p.title-date
+                span(style='float:left')
+                  strong Wireless Customer Care 
+                span(style='float:right')
+                  strong Feb 2011 – Sept 2011
+                br
+              // ACS Experience
+              //
+                <p align="left">
+                I can honestly say  the experiences while on the phones in a call center were invaluable. Whilst taking back-to-back inbound calls all day, you speak to a large spectrum of personalities. In doing so, you obtain experience to speak confidently and properly handle situations that may go awry.
+                </p>
+      .parallax
+        img(src='images/background1.jpg', alt='Unsplashed background img 2', style='height:1500px')
+    .container
+      // Projects Section
+      h5#projects.center.black-text Professional Projects I've Worked On
+      .row
+        .col.s12.m4(style='padding-bottom:10px')
+          .icon-block
+            center
+              img.mdm-logo(src='images/mdm-logo.png')
+            h5.center Mobile Manager
+            // Modal Trigger
+            center
+              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal1') Learn More
+            // Modal Structure
+            #modal1.modal
+              .modal-content
+                center
+                  video.responsive-video(style='width:95%', controls='', poster='http://media.lightspeedsystems.com/wp-content/uploads/2012/12/MM-Explainer-Thumbnail.png')
+                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/Mobile+Manager+Explained.mp4', type='video/mp4')
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.lightspeedsystems.com/products/mobile-manager/') Website
+        .col.s12.m4
+          .icon-block
+            center
+              img.rocket-logo(src='images/rocket-logo.png')
+            h5.center Rocket Webfilter
+            // Modal Trigger
+            center
+              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal3') Learn More
+            // Modal Structure
+            #modal3.modal
+              .modal-content
+                center
+                  video.responsive-video(style='width:95%', controls='', poster='http://d1uv8tovvu0o29.cloudfront.net/videos/Interviews/CETPA2013/IT_Testamonial_Thumb.jpg')
+                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/Web+Filter+Explained.mp4', type='video/mp4')
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.lightspeedsystems.com/products/web-filter/') Website
+        .col.s12.m4
+          .icon-block
+            center
+              img.mybigcampus-logo(src='images/mybigcampus.png')
+            h5.center My Big Campus
+            // Modal Trigger
+            center
+              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal2') Learn More
+            // Modal Structure
+            #modal2.modal
+              .modal-content
+                center
+                  video.responsive-video(style='width:95%', controls='', poster='http://community.lightspeedsystems.com/wp-content/uploads/2014/08/MBC-Video-Thumb.png')
+                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/My+Big+Campus+Explained.mp4', type='video/mp4')
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.mybigcampus.com/') Website
+    //
+      15secondtrailers
+      <div class="col s12 m4">
+      <div class="icon-block">
+      <h2 class="center black-text"><img src="15logo.png" class="fif-logo"></h2>
+      <h5 class="center">Rocket Webfilter</h5>
+      <ul class="light">
+      </div>
+      </div>
+      </div>
+    .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2)')
+      .section.no-pad-bot
+        .container
+          .row.center
+            h5#education.header.col.s12.light Education
+            p
+              br
+            // SELF STUDY
+            p.title-date
+              span(style='float:left')
+                strong Self Study 
+              span(style='float:right')  Present 
+              br
+            p#high(align='left')
+              | Developer Meetups
+              br
+              |  Personal Projects
+              br
+              |  TeamTreeHouse
+              br
+              |  Michael Hartl's Rails Tutorial
+            // Conferences
+            p.title-date
+              span(style='float:left')
+                strong Conferences
+              span(style='float:right')  2014 - Present 
+              br
+            p#high(align='left')
+              | RailsConf - San Diego
+              br
+              | Lightspeed Connect - Austin
+            // Devry
+            p.title-date
+              span(style='float:left')
+                strong Devry Univerisity of Bakersfield
+              span(style='float:right')  2010 - 2014 
+              br
+            p#high(align='left')
+              | B.S. Networking Science and Communication
+              br
+              | Management Courses 
+              br
+              | 4.0 GPA
+            // ROC
+            p.title-date
+              span(style='float:left')
+                strong Regional Occupational Center
+              span(style='float:right')  2008 - 2010 
+              br
+            p#high(align='left')
+              | A+ Certification 
+              br
+              | Internships
+            // Highschool
+            p.title-date
+              span(style='float:left')
+                strong Golden Valley High School
+              span(style='float:right')  2006 - 2010 
+              br
+            p#high(align='left')
+              | 4.0 GPA
+      .parallax
+        img(src='images/background1.jpg', alt='Unsplashed background img 3', style='align:right;height:900px')
+    .container
+      .section
+        .row
+          .col.s12.center
+            h3
+              i.mdi-action-description.black-text
+            a.btn.tooltipped(data-position='right', data-delay='50', data-tooltip='Download', style='font-size:75%', href='resume.pdf') Resume
+            p(color='black')  Press here to view my Resume in a beautiful PDF format. 
+    // Scripts
+    script(src='javascripts/materialize.js')
+    script(src='javascripts/init.js')
