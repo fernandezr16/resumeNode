@@ -357,10 +357,19 @@ html(lang='en')
       .section
         .row
           .col.s12.center
+            h3
+              i.mdi-action-description.black-text
+            a.btn.tooltipped(data-position='right', data-delay='50', data-tooltip='Download', style='font-size:75%', href='https://s3-us-west-1.amazonaws.com/thezoo/resume.pdf') Resume
+            p(color='black')  Press here to view my Resume in a beautiful PDF format. 
+
+    .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2)')
+      .section.no-pad-bot
+        .container
+          .row.center
+
             center
               img.rocket-logo(src='images/spotify-logo.png')
-            h5 What I'm Listening to...
-
+            h5#education.header.col.s12.light What I'm Listening to...
             a(href=spotifyData.href)
              img(src=spotifyData.albumArt,height="135")
 
@@ -375,8 +384,8 @@ html(lang='en')
 
             a(href=spotifyData5.href)
              img(src=spotifyData5.albumArt,height="135")
-
-
+      .parallax
+        img(src='images/background1.png', alt='Unsplashed background img 3', style='align:right;height:900px')
 
     // Scripts
     script(src='javascripts/materialize.js')
