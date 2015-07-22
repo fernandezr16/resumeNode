@@ -11,9 +11,17 @@ html(lang='en')
       ga('create', 'UA-64679846-1', 'auto');
       ga('send', 'pageview');
     script(type='text/javascript').
-      $(window).load(function(){
-      $('#modal5').openModal();
-      });
+      //- $(window).bind("scroll", function() {
+      //- if ($(this).scrollTop() > 520) {
+      //- $("#modal5").fadeIn();
+      //- } else {
+      //- $("#modal5").stop().fadeOut();
+      //- }
+      //- });
+
+      //- $(window).load(function(){
+      //- $('#modal5').openModal();
+      //- });
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     title Now Running on Node.JS!
@@ -61,8 +69,8 @@ html(lang='en')
         img(src='images/background1.jpg', alt='Unsplashed background img 2', style='height:900px')
     .container
       // Modal Trigger
-      div(style='padding-top: 10px')
-        center
+      center 
+          br
           a.modal-trigger.waves-effect.waves-light.btn(style='font-size:80%', href='#modal5') Press Here To Read About Me
       // Modal Structure
       #modal5.modal
@@ -123,6 +131,7 @@ html(lang='en')
             br
             | Create Capistrano script to deploy to Digital Ocean 
             br
+            | Change ugly buttons.
           center
             u Last Updated    7.21.15
             br
