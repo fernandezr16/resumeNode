@@ -44,7 +44,7 @@ request.post(authOptions, function(error, response, body) {
       json: true
     };
     request.get(options, function(error, response, body) {
-      console.log(body.items[4].images[0].url)
+      console.log(body.items[1].images[0].url)
 
       router.get('/', function(req, res, next) {
         res.render('index', { 
