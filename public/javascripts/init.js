@@ -12,14 +12,17 @@
     $('.modal-trigger').leanModal();
   });
 
-    $(window).load(function(){
-        $('#modal5').modal('show');
-    });
 
+// OPENS MODAL ON SCROLL
+  var options = [
+    {selector: '#skills', offset: 420, callback: "$('#modal5').openModal()" },
+  ];
+  Materialize.scrollFire(options);
+ 
 
 
   // Initialize collapse button
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
-        
+  
