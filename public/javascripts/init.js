@@ -15,7 +15,8 @@
 
 // OPENS MODAL ON SCROLL
   var options = [
-    {selector: '#skills', offset: 420, callback: "$('#modal5').openModal()" },
+    {selector: '#skills', offset: 320, callback: "$('#modal5').openModal()" },
+    {selector: '#skills', offset: 520, callback: "$('#modal5').closeModal()" },
   ];
   Materialize.scrollFire(options);
  
