@@ -6,7 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
-
+#footerID {
+    color: white;
+    background-color: rgba(0,0,0,.9);
+}
 
 
 blockquote{
