@@ -194,6 +194,93 @@ html(lang='en')
                 li IP/DNS/DHCP
                 li Architecture
                 li Tier III Support
+
+      //SPOTIFY SECTION
+    .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2); height:500px;')
+      .section.no-pad-bot
+        .container
+          .row.center
+
+            center
+              img.rocket-logo(src='images/spotify-logo.png')
+            h5#education.header.col.s12.light What I'm Listening to...
+            a(href=spotifyData.href, target="_blank")
+             img(src=spotifyData.albumArt,height="135",id="spotalbum")
+
+            a(href=spotifyData2.href, target="_blank")
+             img(src=spotifyData2.albumArt,height="135",id="spotalbum")
+
+            a(href=spotifyData3.href, target="_blank")
+             img(src=spotifyData3.albumArt,height="135",id="spotalbum")
+
+            a(href=spotifyData4.href, target="_blank")
+             img(src=spotifyData4.albumArt,height="135",id="spotalbum")
+
+            a(href=spotifyData5.href, target="_blank")
+             img(src=spotifyData5.albumArt,height="135",id="spotalbum")
+            p.title-date The album art above is actually using the SpotifyAPI for my latest created playlists! Click any to listen. 
+
+      .parallax
+        img(src='images/kanye3.jpg', alt='Unsplashed background img 3', style='align:right;width:max;padding-bottom:299px;')   
+
+
+      // Projects Section
+    .container
+      h5#projects.center.black-text Professional Projects I've Worked On
+      .row
+        .col.s12.m4(style='padding-bottom:10px')
+          .icon-block
+            center
+              img.mdm-logo(src='images/mdm-logo.png')
+            h5.center Mobile Manager
+            // Modal Trigger
+            center
+              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal1') Learn More
+            // Modal Structure
+            #modal1.modal
+              .modal-content
+                center
+                  video.responsive-video(style='width:95%', controls='', poster='http://media.lightspeedsystems.com/wp-content/uploads/2012/12/MM-Explainer-Thumbnail.png')
+                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/Mobile+Manager+Explained.mp4', type='video/mp4')
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.lightspeedsystems.com/products/mobile-manager/') Website
+        .col.s12.m4
+          .icon-block
+            center
+              img.rocket-logo(src='images/rocket-logo.png')
+            h5.center Rocket Webfilter
+            // Modal Trigger
+            center
+              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal3') Learn More
+            // Modal Structure
+            #modal3.modal
+              .modal-content
+                center
+                  video.responsive-video(style='width:95%', controls='', poster='http://d1uv8tovvu0o29.cloudfront.net/videos/Interviews/CETPA2013/IT_Testamonial_Thumb.jpg')
+                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/Web+Filter+Explained.mp4', type='video/mp4')
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.lightspeedsystems.com/products/web-filter/') Website
+        .col.s12.m4
+          .icon-block
+            center
+              img.mybigcampus-logo(src='images/mybigcampus.png')
+            h5.center My Big Campus
+            // Modal Trigger
+            center
+              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal2') Learn More
+            // Modal Structure
+            #modal2.modal
+              .modal-content
+                center
+                  video.responsive-video(style='width:95%', controls='', poster='http://community.lightspeedsystems.com/wp-content/uploads/2014/08/MBC-Video-Thumb.png')
+                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/My+Big+Campus+Explained.mp4', type='video/mp4')
+              .modal-footer
+                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.mybigcampus.com/') Website
+
+
+
+  
+
     .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2)')
       .section.no-pad-bot
         .container
@@ -259,68 +346,20 @@ html(lang='en')
                 </p>
       .parallax
         img(src='images/background7.png', alt='Unsplashed background img 2', style='height:1500px')
+
+
+
+    //Hire Me Section 
     .container
-      // Projects Section
-      h5#projects.center.black-text Professional Projects I've Worked On
-      .row
-        .col.s12.m4(style='padding-bottom:10px')
-          .icon-block
-            center
-              img.mdm-logo(src='images/mdm-logo.png')
-            h5.center Mobile Manager
-            // Modal Trigger
-            center
-              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal1') Learn More
-            // Modal Structure
-            #modal1.modal
-              .modal-content
-                center
-                  video.responsive-video(style='width:95%', controls='', poster='http://media.lightspeedsystems.com/wp-content/uploads/2012/12/MM-Explainer-Thumbnail.png')
-                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/Mobile+Manager+Explained.mp4', type='video/mp4')
-              .modal-footer
-                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.lightspeedsystems.com/products/mobile-manager/') Website
-        .col.s12.m4
-          .icon-block
-            center
-              img.rocket-logo(src='images/rocket-logo.png')
-            h5.center Rocket Webfilter
-            // Modal Trigger
-            center
-              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal3') Learn More
-            // Modal Structure
-            #modal3.modal
-              .modal-content
-                center
-                  video.responsive-video(style='width:95%', controls='', poster='http://d1uv8tovvu0o29.cloudfront.net/videos/Interviews/CETPA2013/IT_Testamonial_Thumb.jpg')
-                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/Web+Filter+Explained.mp4', type='video/mp4')
-              .modal-footer
-                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.lightspeedsystems.com/products/web-filter/') Website
-        .col.s12.m4
-          .icon-block
-            center
-              img.mybigcampus-logo(src='images/mybigcampus.png')
-            h5.center My Big Campus
-            // Modal Trigger
-            center
-              a.waves-effect.waves-light.btn.modal-trigger(style='font-size:75%', href='#modal2') Learn More
-            // Modal Structure
-            #modal2.modal
-              .modal-content
-                center
-                  video.responsive-video(style='width:95%', controls='', poster='http://community.lightspeedsystems.com/wp-content/uploads/2014/08/MBC-Video-Thumb.png')
-                    source(src='https://s3-us-west-1.amazonaws.com/thezoo/My+Big+Campus+Explained.mp4', type='video/mp4')
-              .modal-footer
-                a.modal-action.modal-close.waves-effect.waves-green.btn(href='http://www.mybigcampus.com/') Website
-    //
-      15secondtrailers
-      <div class="col s12 m4">
-      <div class="icon-block">
-      <h2 class="center black-text"><img src="15logo.png" class="fif-logo"></h2>
-      <h5 class="center">Rocket Webfilter</h5>
-      <ul class="light">
-      </div>
-      </div>
-      </div>
+      .section
+        .row
+          .col.s12.center
+            h3
+              i.mdi-action-description.black-text
+            a.btn.tooltipped(data-position='right', data-delay='50', data-tooltip='Download', style='font-size:75%', href='https://s3-us-west-1.amazonaws.com/thezoo/Resume-6-21-Fixed.pdf', target="_blank") HIRE ME
+            p(color='black')  Press here to view my Resume in a beautiful PDF format. 
+
+
     .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2)')
       .section.no-pad-bot
         .container
@@ -384,41 +423,9 @@ html(lang='en')
               | 4.0 GPA
       .parallax
         img(src='images/background2.jpg', alt='Unsplashed background img 3', style='align:right;height:900px')
-    .container
-      .section
-        .row
-          .col.s12.center
-            h3
-              i.mdi-action-description.black-text
-            a.btn.tooltipped(data-position='right', data-delay='50', data-tooltip='Download', style='font-size:75%', href='https://s3-us-west-1.amazonaws.com/thezoo/Resume-6-21-Fixed.pdf', target="_blank") HIRE ME
-            p(color='black')  Press here to view my Resume in a beautiful PDF format. 
 
-    .parallax-container.valign-wrapper(style='background-color: rgba(0, 0, 0, .2); height:500px;')
-      .section.no-pad-bot
-        .container
-          .row.center
 
-            center
-              img.rocket-logo(src='images/spotify-logo.png')
-            h5#education.header.col.s12.light What I'm Listening to...
-            a(href=spotifyData.href, target="_blank")
-             img(src=spotifyData.albumArt,height="135",margin='0px 10px')
 
-            a(href=spotifyData2.href, target="_blank")
-             img(src=spotifyData2.albumArt,height="135")
-
-            a(href=spotifyData3.href, target="_blank")
-             img(src=spotifyData3.albumArt,height="135")
-
-            a(href=spotifyData4.href, target="_blank")
-             img(src=spotifyData4.albumArt,height="135")
-
-            a(href=spotifyData5.href, target="_blank")
-             img(src=spotifyData5.albumArt,height="135")
-            p.title-date The album art above is actually using the SpotifyAPI for my latest created playlists! Click any to listen. 
-
-      .parallax
-        img(src='images/kanye3.jpg', alt='Unsplashed background img 3', style='align:right;width:max;padding-bottom:299px;')
 footer
   .footer-copyright#footerID
     .container
