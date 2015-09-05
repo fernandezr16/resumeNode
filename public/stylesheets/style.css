@@ -38,7 +38,7 @@ margin:30px;
 }
 
   .btn:hover, .btn-large:hover {
-    color: gray;
+    /*color: gray;*/
     background-color: #eeeeee; }
 
 
