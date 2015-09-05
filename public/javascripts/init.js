@@ -14,11 +14,11 @@
 
 
 // OPENS MODAL ON SCROLL
-  var options = [
-    {selector: '#skills', offset: 320, callback: "$('#modal5').openModal()" },
-    {selector: '#skills', offset: 610, callback: "$('#modal5').closeModal()" },
-  ];
-  Materialize.scrollFire(options);
+  // var options = [
+  //   {selector: '#skills', offset: 320, callback: "$('#modal5').openModal()" },
+  //   {selector: '#skills', offset: 610, callback: "$('#modal5').closeModal()" },
+  // ];
+  // Materialize.scrollFire(options);
  
 
 
