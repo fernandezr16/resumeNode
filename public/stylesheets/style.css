@@ -28,7 +28,7 @@ margin:30px;
   border-width : 1px;
   border-radius : 5px;
   height: 30px;
-  background-color: #6C6D6D;
+  background-color: black;
 /*  border-color : black;*/
 /*  padding: 0px 10px 30px;
   background: rgba(0,0,0,3);
@@ -45,7 +45,7 @@ margin:30px;
 
   .btn:hover, .btn-large:hover {
     /*color: gray;*/
-    background-color: black; }
+    background-color: #6C6D6D; }
 
 
 nav ul a,
