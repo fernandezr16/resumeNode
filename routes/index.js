@@ -11,6 +11,8 @@ module.exports = router;
 
 
 
+var express = require('express');
+var router = express.Router();
 var request = require('request');
 var client_id = '5d0b4dc198d944c6a8a50c9fc6eac622'; // Your client id
 var client_secret = 'b47489765d6545fa852a6656914b0085'; // Your client secret
