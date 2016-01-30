@@ -51,10 +51,10 @@ request.post(authOptions, function(error, response, body) {
         res.render('index', { 
           title: 'Spotify', 
           spotifyData: {albumArt: body.items[0].images[0].url, href: t.items[0].uri, name: body.items[0].name, },
-          spotifyData2: {albumArt: body.items[1].images[0].url, href: body.items[1].external_urls.spotify, name: body.items[1].name, },
-          spotifyData3: {albumArt: body.items[2].images[0].url, href: body.items[2].external_urls.spotify, name: body.items[2].name, },
-          spotifyData4: {albumArt: body.items[3].images[0].url, href: body.items[3].external_urls.spotify, name: body.items[3].name, },
-          spotifyData5: {albumArt: body.items[4].images[0].url, href: body.items[4].external_urls.spotify, name: body.items[4].name, },
+          spotifyData2: {albumArt: body.items[1].images[0].url, href: t.items[1].uri, name: body.items[1].name, },
+          spotifyData3: {albumArt: body.items[2].images[0].url, href: t.items[2].uri, name: body.items[2].name, },
+          spotifyData4: {albumArt: body.items[3].images[0].url, href: t.items[3].uri, name: body.items[3].name, },
+          spotifyData5: {albumArt: body.items[4].images[0].url, href: t.items[4].uri, name: body.items[4].name, },
         });
       });
     });
